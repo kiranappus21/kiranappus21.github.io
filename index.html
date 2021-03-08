@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body>
+    <body style="background-color:rgb(74, 38, 131);color:white;"</body>
+    <form action="action.php">
+        <div>
+            <h2>Signup</h2>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" id="pwd" name="pwd" required>
+        </div><br><br> 
+        <fieldset>
+            <legend>Student Details</legend>
+            <!--name-->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="peace" required>
+            <label for="mname">Middle name:</label>
+            <input type="text" id="mname" name="mname" placeholder="author">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="inital of your name" required>
+            <br><br>
+           
+            <!--phone number-->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="00000-00000" pattern="[0-9]{5}-[0-9]{5}" required>
+            <br><br>
+            <!--email-->
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <!--gender-->
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Parent's Details</legend>
+            <!--name-->
+            <label class="l1">Father's Details</label><br>
+            <label for="ffname">First name:</label>
+            <input type="text" id="ffname" name="ffname" placeholder="humble" required>
+            <label for="fmname">Middle name:</label>
+            <input type="text" id="fmname" name="fmname" placeholder="peace">
+            <label for="lname">Last name:</label>
+            <input type="text" id="flname" name="flname" placeholder="inital" required>
+            <br><br>
+            <!--phone number of parents-->
+            <label for="fphone">Phone Number:</label>
+            <input type="tel" id="fphone" name="fphone" placeholder="00000-00000" pattern="[6-9]{5}-[0-9]{5}" required>
+            <br><br>
+            <!--email-->
+            <label for="femail">Gmail:</label>
+            <input type="email" id="femail" name="femail" required>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <!--address-->
+            <legend>Address</legend>
+            <input type="Music" id="Permanent Address" name="Address"required>
+            <label for="Permanent Address">Permanent Address</label>
+            <input type="Music" id="Corresponding Address" name="Address" value="Corresponding Address" required>
+            <label for="female">Corresponding Address</label>
+            <br><br>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address" placeholder="#00,-----,----" required>
+            <br><br>
+            <label for="Address">district:</label>
+            <input type="text" id="district" name="district" placeholder="" required>
+            <br><br>
+            <label for="pincode">pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="" pattern="560-[0-9]{3}" required>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <!--sslc marks-->
+            <label for="sslcmarks">SSLC Marks:</label>
+            <input class="l2" type="text" id="sslcmarks" name="sslcmarks" placeholder="" pattern="[0-9]{3}" required>
+            <br><br>
+            <!--PUC Marks-->
+            <label for="pucmarks">PUC Marks:</label>
+            <input class="l2" type="text" id="pucmarks" name="pucmarks" placeholder="" pattern="[0-9]{3}" required>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Others</legend>
+            <!---->
+            <label for="annualincome">Family Annual Income :</label>
+            <input type="text" id="annualincome" name="annualincome" min="0" max="300000" step="10000" value="" required>
+            <br><br>
+            <!--income certificate-->
+            <label for="icn">Income Certificate Number:</label>
+            <input type="text" id="icn" name="icn" placeholder="RD*********" pattern="{RD}[0-9]{10}" required>
+            <br><br>
+             <!--income certificate-->
+
+             <!--Cast certificate-->
+             <label for="ccn">Cast Certificate Number:</label>
+             <input type="text" id="ccn" name="ccn" placeholder="RD*********" pattern="{RD}[0-9]{10}" required>
+             <br><br>
+             <!--cast certificate-->
+        </fieldset>
+        <fieldset>
+            <legend>Documents</legend>
+            <!--SSLC Marks Card-->
+            <label for="SMS">SSLC Marks Card</label>
+            <input type="file" id="SMC" name="SMC" required>
+            <br><br>
+            <!--PUC Marks Card-->
+            <label for="PMC">PUC Marks Card</label>
+            <input type="file" id="PMC" name="PMC" required>
+            <br><br>
+            <!--aadhar Card-->
+            <label for="AC">Aadhar Card</label>
+            <input type="file" id="AC" name="AC" required>
+            <br><br>
+            <!--Cast And Income-->
+            <label for="CI">Cast And Income</label>
+            <input type="file" id="CI" name="CI" required>
+            <br><br>
+        </fieldset>
+        <input type="checkbox" name="t&c" id="t&c" required>
+        <label for="t&c">Tick here if you agree for our terms and conditions</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <br><br>
+    </form>
+</body>
+</html>
